@@ -6,52 +6,79 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f6f9;
-    color:#333;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:#333;
 }
 
 header{
-    background:#0F6CBD;
-    color:white;
-    text-align:center;
-    padding:30px;
+text-align:center;
+padding:40px;
+color:white;
 }
 
 header h1{
-    margin:0;
-    font-size:32px;
+font-size:40px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+opacity:0.9;
 }
 
 .container{
-    width:80%;
-    margin:auto;
-    padding:30px;
+width:85%;
+margin:auto;
+padding-bottom:40px;
 }
 
 section{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:8px;
-    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+margin:25px 0;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+section:hover{
+transform:translateY(-5px);
 }
 
 h2{
-    color:#0F6CBD;
+color:#0F6CBD;
+margin-bottom:15px;
+}
+
+h3{
+margin-top:15px;
+color:#444;
+}
+
+p{
+line-height:1.7;
+margin-bottom:10px;
 }
 
 ul{
-    margin-left:20px;
+margin-left:20px;
+line-height:1.8;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
+text-align:center;
+padding:20px;
+color:white;
+margin-top:30px;
+font-size:14px;
 }
 
 </style>
@@ -60,93 +87,114 @@ footer{
 <body>
 
 <header>
-<h1>Veille Technologique : Power BI</h1>
-<p>Analyse d'un outil de Business Intelligence</p>
+<h1>Veille Technologique</h1>
+<p>Analyse de l'outil de Business Intelligence Power BI</p>
 </header>
 
 <div class="container">
 
 <section>
-<h2>1. Introduction</h2>
+<h2>Introduction</h2>
 <p>
-La Business Intelligence permet aux entreprises d’analyser leurs données afin de prendre de meilleures décisions.
-Parmi les outils les plus populaires, on trouve 
-:contentReference[oaicite:0]{index=0} développé par 
-:contentReference[oaicite:1]{index=1}.
-Power BI permet de transformer des données brutes en tableaux de bord interactifs et en visualisations
-faciles à comprendre.
+Avec l’augmentation massive des données dans les entreprises et les organisations,
+il devient essentiel d’utiliser des outils capables d’analyser et d’exploiter ces informations.
+Les outils de Business Intelligence permettent justement de transformer les données en
+informations utiles pour la prise de décision.
+</p>
+
+<p>
+Power BI est une solution développée par Microsoft qui permet de collecter,
+analyser et visualiser des données provenant de différentes sources.
+Cet outil aide les entreprises à mieux comprendre leurs données et à
+identifier les tendances importantes.
 </p>
 </section>
 
 <section>
-<h2>2. Qu'est-ce que Power BI ?</h2>
+<h2>1. Collecte et intégration des données</h2>
 <p>
-Power BI est une plateforme d’analyse de données qui permet de collecter, transformer et visualiser
-des données provenant de différentes sources.
+Power BI permet d’importer des données provenant de nombreuses sources
+afin de centraliser les informations dans un seul environnement.
 </p>
 
 <ul>
-<li>Analyse de données</li>
-<li>Création de tableaux de bord</li>
-<li>Visualisation interactive</li>
-<li>Aide à la prise de décision</li>
-</ul>
-</section>
-
-<section>
-<h2>3. Les composants de Power BI</h2>
-
-<h3>Power BI Desktop</h3>
-<p>Application utilisée pour créer des rapports et analyser les données.</p>
-
-<h3>Power BI Service</h3>
-<p>Version cloud permettant de partager les rapports et tableaux de bord.</p>
-
-<h3>Power BI Mobile</h3>
-<p>Application mobile pour consulter les rapports depuis un smartphone.</p>
-
-<h3>Power BI Gateway</h3>
-<p>Permet de connecter des données locales avec le service cloud.</p>
-
-</section>
-
-<section>
-<h2>4. Sources de données</h2>
-
-<p>Power BI peut se connecter à plusieurs sources :</p>
-
-<ul>
-<li>Excel</li>
-<li>CSV</li>
-<li>JSON</li>
-<li>SQL Server</li>
-<li>MySQL</li>
+<li>Fichiers Excel</li>
+<li>Fichiers CSV</li>
+<li>Bases de données SQL</li>
+<li>Services Cloud</li>
 <li>API Web</li>
 </ul>
 
+<p>
+Cette capacité permet d’avoir une vision globale des données et facilite leur analyse.
+</p>
 </section>
 
 <section>
-<h2>5. Technologies utilisées</h2>
+<h2>2. Transformation et préparation des données</h2>
 
-<h3>Power Query</h3>
 <p>
-:contentReference[oaicite:2]{index=2}
-permet de nettoyer et transformer les données avant l’analyse.
+Avant l’analyse, les données doivent souvent être nettoyées et transformées.
+Power BI utilise un outil appelé Power Query pour préparer les données.
 </p>
 
-<h3>DAX</h3>
+<ul>
+<li>Suppression des erreurs</li>
+<li>Filtrage des informations</li>
+<li>Fusion de plusieurs tables</li>
+<li>Transformation des formats de données</li>
+</ul>
+
 <p>
-:contentReference[oaicite:3]{index=3}
-est un langage utilisé pour créer des calculs avancés dans Power BI.
+Cette étape améliore la qualité des analyses et garantit des résultats fiables.
 </p>
 
 </section>
 
 <section>
-<h2>6. Visualisations</h2>
+<h2>3. Modélisation des données</h2>
 
-<p>Power BI permet de créer plusieurs types de graphiques :</p>
+<p>
+Power BI permet de créer des relations entre plusieurs tables afin de construire
+un modèle de données structuré.
+</p>
+
+<p>
+La modélisation permet d’organiser les données et de faciliter leur analyse.
+Par exemple, une table de ventes peut être reliée à une table de clients
+ou à une table contenant des informations de dates.
+</p>
+
+</section>
+
+<section>
+<h2>4. Analyse et calculs avancés</h2>
+
+<p>
+Power BI permet également de réaliser des analyses avancées grâce au langage DAX
+(Data Analysis Expressions).
+</p>
+
+<ul>
+<li>Création de mesures</li>
+<li>Calcul de moyennes</li>
+<li>Calcul de pourcentages</li>
+<li>Création d’indicateurs de performance</li>
+</ul>
+
+<p>
+Ces calculs permettent d’obtenir des analyses plus approfondies et plus précises.
+</p>
+
+</section>
+
+<section>
+<h2>5. Visualisations interactives</h2>
+
+<p>
+Power BI permet de représenter les données sous forme de graphiques
+afin de faciliter leur compréhension.
+</p>
 
 <ul>
 <li>Graphiques en barres</li>
@@ -154,55 +202,60 @@ est un langage utilisé pour créer des calculs avancés dans Power BI.
 <li>Diagrammes circulaires</li>
 <li>Cartes géographiques</li>
 <li>Tableaux interactifs</li>
-<li>KPI</li>
 </ul>
-
-</section>
-
-<section>
-<h2>7. Avantages</h2>
-
-<ul>
-<li>Facile à utiliser</li>
-<li>Visualisations interactives</li>
-<li>Intégration avec Excel et Azure</li>
-<li>Mise à jour automatique des données</li>
-<li>Partage simple des rapports</li>
-</ul>
-
-</section>
-
-<section>
-<h2>8. Limites</h2>
-
-<ul>
-<li>Performance limitée avec de très grandes données</li>
-<li>Dépendance à l’écosystème Microsoft</li>
-<li>Langage DAX parfois complexe</li>
-</ul>
-
-</section>
-
-<section>
-<h2>9. Domaines d'utilisation</h2>
-
-<ul>
-<li>Analyse des ventes</li>
-<li>Analyse financière</li>
-<li>Marketing</li>
-<li>Analyse des performances d'entreprise</li>
-<li>Analyse de données publiques</li>
-</ul>
-
-</section>
-
-<section>
-<h2>10. Conclusion</h2>
 
 <p>
-Power BI est aujourd’hui l’un des outils de Business Intelligence les plus utilisés dans le monde.
-Il permet aux entreprises de transformer leurs données en informations utiles afin d’améliorer
-la prise de décision et l’analyse stratégique.
+Les visualisations sont interactives et permettent d’explorer les données
+en cliquant sur les différents éléments.
+</p>
+
+</section>
+
+<section>
+<h2>6. Création de tableaux de bord</h2>
+
+<p>
+Power BI permet de créer des tableaux de bord interactifs appelés dashboards.
+Ces dashboards regroupent plusieurs graphiques et indicateurs sur une seule interface.
+</p>
+
+<p>
+Ils permettent de suivre facilement l’évolution des données et d’avoir
+une vision globale des performances d’une organisation.
+</p>
+
+</section>
+
+<section>
+<h2>7. Partage et collaboration</h2>
+
+<p>
+Les rapports créés dans Power BI peuvent être partagés avec d’autres utilisateurs.
+Les entreprises peuvent publier leurs rapports sur le cloud afin que
+les équipes puissent consulter les analyses en temps réel.
+</p>
+
+<p>
+Cette fonctionnalité facilite la collaboration et permet une meilleure
+circulation de l’information dans l’organisation.
+</p>
+
+</section>
+
+<section>
+<h2>Conclusion</h2>
+
+<p>
+Power BI est aujourd’hui l’un des outils de Business Intelligence
+les plus utilisés dans le monde. Grâce à ses nombreuses fonctionnalités,
+il permet de transformer les données en informations utiles
+pour la prise de décision.
+</p>
+
+<p>
+Dans un contexte où les données deviennent de plus en plus importantes,
+les outils comme Power BI jouent un rôle essentiel dans l’analyse
+et la compréhension de l’information.
 </p>
 
 </section>
